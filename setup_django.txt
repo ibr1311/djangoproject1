@@ -1,0 +1,30 @@
+touch requirements.txt(django, psycopg2-binary)
+pip install -r requirements.txt
+django-admin startproject django_project .
+python manage.py startapp *apps_name* - запуск приложения
+указали приложение в INSTALLED_APPS
+
+создать БД
+связь с постгрес:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'parker',  # DB's name
+        'USER': 'macbook', # user
+        'HOST': 'localhost', # host
+        'POST': 5432, #port
+        'PASSWORD': '1', #psql password
+    }
+
+
+
+python3 manage.py makemigrations - создание миграций
+python3 manage.py migrate
+python3 manage.py createsuperuser
+
+
+
+
+
+
